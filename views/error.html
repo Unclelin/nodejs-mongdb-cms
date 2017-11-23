@@ -1,0 +1,21 @@
+<!--extends layout-->
+
+<!--block content-->
+  <!--h1= message-->
+  <!--h2= error.status-->
+  <!--pre #{error.stack}-->
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<title><%=message%></title>
+<body>
+<h1><%=error.status%></h1>
+<p><%=error.stack%></p>
+
+<a href="/index">home</a>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<h1><%= title %></h1>
+<p><a href="/newarticle">新增</a> </p>
+<ul>
+    <% items.forEach(function(item){%>
+    <li><img src="<%=item.image%>" width="60px" height="60px"><a href="/article?articleId=<%=item._id%>" ><%=item.article_title %></a>－－－<%=item.article_content %>&nbsp;&nbsp;&nbsp;<a href="/delarticle?articleId=<%=item._id%>">删除</a> </li>
+    <% }) %>
+</ul>
+</body>
+</html>

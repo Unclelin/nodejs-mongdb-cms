@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<script>
+    var data = "<%=dataDoc%>";
+    //alert(data);
+//    for(var o in data){
+//        console.log(o);
+//        console.log(data[o]);
+//        console.log("text:"+data[o].article_title+" value:"+data[o].article_title );
+//    }
+</script>
+<title><%=title%></title>
+<body>
+
+<h1><%=dataDoc[0].article_title%></h1>
+<img src="<%=dataDoc[0].image%>" width="60px" height="60px">
+<p><%=dataDoc[0].article_title%></p>
+<p><%=dataDoc[0].release%></p>
+<p><%=dataDoc[0].author%></p>
+<p><%=dataDoc[0].article_content%></p>
+<p><%=dataDoc[0].create_time%></p>
+<a href="/delarticle?articleId=<%=dataDoc[0]._id%>">删除</a>
+<br/>
+<a href="/editArticle?articleId=<%=dataDoc[0]._id%>">修改</a>
+</body>
+</html>
