@@ -1,14 +1,9 @@
-–node_modules   项目中依赖的包
-
--database       mongodb utils目录
-
-–public         公共资源放的目录
-
-–routes         学名 路由，里面放着一些路由文件
-
-–views			 放着就是页面文件了
-
-–app.js		 项目的入口文件。当然你也可以改成其他的名字。
+–node_modules   项目中依赖的包。
+-database       mongodb utils目录。
+–public         公共资源放的目录。
+–routes         学名 路由，里面放着一些路由文件。
+–views			放着就是页面文件了。
+–app.js		    项目的入口文件。当然你也可以改成其他的名字。
 
 node.js建议是用版本
 mac node v7.0.0
