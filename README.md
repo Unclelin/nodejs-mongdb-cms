@@ -1,3 +1,4 @@
+包目录结构
 –node_modules   项目中依赖的包。
 -database       mongodb utils目录。
 –public         公共资源放的目录。
